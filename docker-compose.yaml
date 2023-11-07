@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysqlPresta
+    environment:
+      MYSQL_ROOT_PASSWORD: prestashop
+      MYSQL_DATABASE: prestashop
+    restart: always
+    ports:
+      - "3306"
+    networks:
+      - prestashop-net
+
+  prestashop:
+    image: prestashop/prestashop:1.7
+    container_name: prestashop
+    environment:
+      DB_SERVER: mysql
+      PS_ENABLE_SSL: 1
+      ADMIN_MAIL: michalski.44@wp.pl
+      ADMIN_PASSWD: 123456
+    ports:
+      - "8000:80"
+    depends_on:
+    - mysql
+    volumes:
+    - C:\\PG\\sem_5\\BE\\Project\\ShopSourceCode:/var/www/html/
+    networks:
+      - prestashop-net
+
+networks:
+  prestashop-net:
