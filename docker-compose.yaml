@@ -15,13 +15,13 @@ services:
       - prestashop-net
 
   prestashop:
-    image: prestashop/prestashop:1.7
+    image: prestashop/prestashop:1.7.8
     container_name: prestashop
     environment:
       DB_SERVER: mysql
       PS_ENABLE_SSL: 1
       ADMIN_MAIL: michalski.44@wp.pl
-      ADMIN_PASSWD: 123456
+      ADMIN_PASSWD: 12345678
     ports:
       - "8000:80"
     depends_on:
