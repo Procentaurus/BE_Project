@@ -6,7 +6,7 @@ services:
     image: mysql:5.7
     container_name: mysqlPresta
     environment:
-      MYSQL_ROOT_PASSWORD: prestashop
+      MYSQL_ROOT_PASSWORD: admin
       MYSQL_DATABASE: prestashop
     restart: always
     ports:
@@ -21,7 +21,7 @@ services:
       DB_SERVER: mysql
       PS_ENABLE_SSL: 1
       ADMIN_MAIL: michalski.44@wp.pl
-      ADMIN_PASSWD: 123456
+      ADMIN_PASSWD: 12345678
     ports:
       - "8000:80"
     depends_on:
