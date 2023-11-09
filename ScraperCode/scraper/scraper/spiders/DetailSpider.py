@@ -9,7 +9,7 @@ class DetailSpider(scrapy.Spider):
     name = "detail_spider"
 
     custom_settings = {
-        'FEEDS': { 'F:\\184725\\ScrapResults\\final_data.csv': {
+        'FEEDS': { 'C:\\PG\\sem_5\\BE\\Project\\ScrapResults\\final_data.csv': {
             'format': 'csv',
             'overwrite': True,
             'encoding': 'utf8'
@@ -18,14 +18,16 @@ class DetailSpider(scrapy.Spider):
 
     def start_requests(self):
         
-        path_to_storage = "F:\\184725\\ScrapResults\\"
+        path_to_storage = "C:\\PG\\sem_5\\BE\Project\\ScrapResults\\"
         base_url = "https://www.centrumrowerowe.pl"
         product_paths = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "product_site_path")
+        categories = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "category")
+        sub_categories = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "sub_category")
 
         for i in range(10):
-            yield scrapy.Request(base_url + product_paths[i], callback=self.parse)
+            yield scrapy.Request(base_url + product_paths[i], callback=self.parse, cb_kwargs={'category': categories[i], 'sub_category': sub_categories[i]} )
 
-    def parse(self, response):
+    def parse(self, response, category, sub_category):
         
         body_element = response.css('body')
         body_class = body_element.css('::attr(class)').get()
@@ -67,6 +69,8 @@ class DetailSpider(scrapy.Spider):
 
             item = DetailItem()
             item["name"] = name if name is not None else ""
+            item['category'] = category
+            item['sub_category'] = sub_category
             item["price"] = price + ".99"
             item["product_code"] = product_code
             item["color"] = color
