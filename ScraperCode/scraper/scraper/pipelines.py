@@ -10,13 +10,14 @@ class MyImagesPipeline(ImagesPipeline):
         image_url_1 = item.get('image_path_1')
         image_url_2 = item.get('image_path_2')
 
-        print("adsasdasdadasdadadadadad")
-        yield scrapy.Request(base_url + image_url_1)
-        yield scrapy.Request(base_url + image_url_2)
+        if(image_url_1):
+            yield scrapy.Request(base_url + image_url_1)
+        if(image_url_2):    
+            yield scrapy.Request(base_url + image_url_2)
             
     def file_path(self, request, response=None, info=None):
 
-        filename = os.path.join("F:\\184725\\ScrapResults\\images", os.path.basename(request.url))
+        filename = os.path.join("C:\PG\sem_5\BE\Project\ScrapResults\\images", os.path.basename(request.url))
         print(filename)
         return filename
 
