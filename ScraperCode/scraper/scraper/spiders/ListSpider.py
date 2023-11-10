@@ -1,6 +1,5 @@
 import scrapy
-from ..items import *
-from ..pipelines import *
+from ..items import ListItem
 
 class ListSpider(scrapy.Spider):
 
@@ -10,18 +9,19 @@ class ListSpider(scrapy.Spider):
         'FEEDS': { 'C:\\PG\\sem_5\\BE\\Project\\ScrapResults\\data.csv': {
             'format': 'csv',
             'overwrite': True,
-            'encoding': 'utf8'
+            'encoding': 'utf8',
+            'csv_delimiter': ';'
         }}
     }
 
     def start_requests(self):
 
-        categories = ["warsztat-rowerowy"]#, "akcesoria", "czesci", "odziez-rowerowa"]
+        categories = ["warsztat-rowerowy", "akcesoria", "czesci", "odziez-rowerowa"]
         sub_categories = [
-            ["stojaki-serwisowe-na-rower"]#, "narzedzia-rowerowe"],
-            # ["blotniki-rowerowe", "bagazniki-rowerowe"],
-            # ["grupy-osprzetu", "rowerowe-napinacze-lancucha"],
-            # ["bielizna-rowerowa", "bluzy-rowerowe"]
+            ["stojaki-serwisowe-na-rower", "narzedzia-rowerowe"],
+            ["blotniki-rowerowe", "bagazniki-rowerowe"],
+            ["grupy-osprzetu", "rowerowe-napinacze-lancucha"],
+            ["bielizna-rowerowa", "bluzy-rowerowe"]
         ]
         base_url = "https://www.centrumrowerowe.pl/"
 
@@ -29,10 +29,10 @@ class ListSpider(scrapy.Spider):
             for j in range(len(sub_categories[0])):
                 for k in range(1,11):
                     url = "{}/{}/{}/?page={}".format(base_url, categories[i], sub_categories[i][j], k)
-                    yield scrapy.Request(url, callback=self.parse, cb_kwargs={'category': categories[i], 'sub_category': sub_categories[i][j]})
+                    yield scrapy.Request(url, callback=self.parse, cb_kwargs={'sub_category': sub_categories[i][j]})
 
 
-    def parse(self, response, category, sub_category):
+    def parse(self, response, sub_category):
 
         body_element = response.css('body')
         body_class = body_element.css('::attr(class)').get()
@@ -47,6 +47,5 @@ class ListSpider(scrapy.Spider):
             for product_path in a_tags_hrefs:
                 item = ListItem()
                 item['product_site_path'] = product_path
-                item['category'] = category
                 item['sub_category'] = sub_category
                 yield item

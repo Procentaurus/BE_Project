@@ -13,8 +13,8 @@ NEWSPIDER_MODULE = "scraper.spiders"
 ROBOTSTXT_OBEY = True
 
 ITEM_PIPELINES = {
-    'scraper.pipelines.MyImagesPipeline': 1,
 }
+
 
 # FEED_FORMAT = 'csv'
 # FEED_URI = os.path.join("C:\\PG\\sem_5\\BE\\Project\\ScrapResults", 'data.csv')
