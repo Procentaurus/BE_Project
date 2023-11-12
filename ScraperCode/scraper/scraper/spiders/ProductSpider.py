@@ -1,19 +1,27 @@
 import scrapy
 from ..support import read_col_from_csv
-from ..items import DetailItem
-from ..pipelines import *
+from ..items import ProductItem
 from bs4 import BeautifulSoup
+from random import random, randint
 
-class DetailSpider(scrapy.Spider):
+class ProductSpider(scrapy.Spider):
 
-    name = "detail_spider"
+    name = "product_spider"
 
     custom_settings = {
-        'FEEDS': { 'C:\\PG\\sem_5\\BE\\Project\\ScrapResults\\final_data.csv': {
-            'format': 'csv',
-            'overwrite': True,
-            'encoding': 'utf8'
-        }}
+        'FEEDS': {
+            'C:\\PG\\sem_5\\BE\\Project\\ScrapResults\\product_data.csv': {
+                'format': 'csv',
+                'overwrite': True,
+                'encoding': 'utf8',
+            }
+        },
+        # 'FEED_EXPORT_FIELDS': ['Product ID', 'Active', 'Name', 'Wholesale price', 'Weight',
+        #                    'Delivery time of in-stock products', 'Quantity', 'Description',
+        #                    'Available for order', 'Image URLs', 'Manufacturer', 'Categories', 'Color'],
+        'FEED_EXPORTERS': {
+            'csv': 'scraper.exporters.CustomCsvItemExporter',
+        }
     }
 
     def start_requests(self):
@@ -21,14 +29,14 @@ class DetailSpider(scrapy.Spider):
         path_to_storage = "C:\\PG\\sem_5\\BE\Project\\ScrapResults\\"
         base_url = "https://www.centrumrowerowe.pl"
         product_paths = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "product_site_path")
-        categories = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "category")
         sub_categories = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "sub_category")
 
         for i in range(10):
-            yield scrapy.Request(base_url + product_paths[i], callback=self.parse, cb_kwargs={'category': categories[i], 'sub_category': sub_categories[i]} )
+            yield scrapy.Request(base_url + product_paths[i], callback=self.parse, cb_kwargs={'sub_category': sub_categories[i]} )
 
-    def parse(self, response, category, sub_category):
+    def parse(self, response, sub_category):
         
+        base_url = "https://www.centrumrowerowe.pl"
         body_element = response.css('body')
         body_class = body_element.css('::attr(class)').get()
 
@@ -56,8 +64,8 @@ class DetailSpider(scrapy.Spider):
                 
                 description += text
 
-            image_path_1 = response.css('.standard img::attr(src)').get()
-            image_path_2 = image_path_1[:-5] + '2' + image_path_1[-4:]
+            image_path_1 = base_url + response.css('.standard img::attr(src)').get()
+            image_path_2 = base_url + image_path_1[:-5] + '2' + image_path_1[-4:]
 
             li_tag_brand = response.xpath('//div[@class="prod-feature"]/ul/li[span[@class="label" and text()="Marka"]]')
             li_tag_color = response.xpath('//div[@class="prod-feature"]/ul/li[span[@class="label" and text()="Kolor"]]')
@@ -67,16 +75,19 @@ class DetailSpider(scrapy.Spider):
             product_code = li_tag_code.xpath('./span[@class="value"]/text()').get()
             brand = li_tag_brand.xpath('./span[@class="value"]/a/text()').get()
 
-            item = DetailItem()
-            item["name"] = name if name is not None else ""
-            item['category'] = category
-            item['sub_category'] = sub_category
-            item["price"] = price + ".99"
-            item["product_code"] = product_code
-            item["color"] = color
-            item["brand"] = brand
-            item["image_path_1"] = image_path_1
-            item["image_path_2"] = image_path_2
-            item["description"] = description if description is not None else ""
+            item = ProductItem()
+            item["Product_ID"] = product_code
+            item["Active"] = 1
+            item["Name"] = name if name is not None else ""
+            item["Wholesale_price"] = price + ".99"
+            item["Weight"] = round(random() * 3, 3)
+            item["Delivery_time_of_in_stock_products"] = randint(2, 10)
+            item["Quantity"] = randint(0, 10)
+            item["Description"] = description if description is not None else ""
+            item["Available_for_order"] = 0 if item["Quantity"] == 0 else 1
+            item["Image_URLs"] = image_path_1, image_path_2
+            item["Manufacturer"] = brand
+            item['Categories'] = sub_category
+            item["Color"] = f"Color:{color}:0"
 
             yield item
