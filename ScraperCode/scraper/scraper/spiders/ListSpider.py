@@ -23,13 +23,20 @@ class ListSpider(scrapy.Spider):
             ["grupy-osprzetu", "rowerowe-napinacze-lancucha"],
             ["bielizna-rowerowa", "bluzy-rowerowe"]
         ]
+        sub_categories_pl = [
+            ["stojaki serwisowe na rower", "narzędzia-rowerowe"],
+            ["błotniki rowerowe", "bagażniki rowerowe"],
+            ["grupy osprzętu", "rowerowe napinacze łańcucha"],
+            ["bielizna rowerowa", "bluzy rowerowe"]
+        ]
+        
         base_url = "https://www.centrumrowerowe.pl/"
 
         for i in range(len(categories)):
             for j in range(len(sub_categories[0])):
                 for k in range(1,11):
                     url = "{}/{}/{}/?page={}".format(base_url, categories[i], sub_categories[i][j], k)
-                    yield scrapy.Request(url, callback=self.parse)
+                    yield scrapy.Request(url, callback=self.parse, cb_kwargs={'sub_category': sub_categories_pl[i][j]})
 
 
     def parse(self, response):
