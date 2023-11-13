@@ -2,6 +2,7 @@ import scrapy
 
 class ListItem(scrapy.Item):
     product_site_path = scrapy.Field()
+    sub_category = scrapy.Field()
 
 class ProductItem(scrapy.Item):
     Product_ID = scrapy.Field()

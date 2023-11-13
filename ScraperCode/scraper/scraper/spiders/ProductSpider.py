@@ -31,8 +31,7 @@ class ProductSpider(scrapy.Spider):
 
         for i in range(10):
             yield scrapy.Request(base_url + product_paths[i], callback=self.parse, cb_kwargs={'sub_category': sub_categories[i]} )
-
-
+            
     def parse(self, response, sub_category):
         
         base_url = "https://www.centrumrowerowe.pl"
@@ -72,7 +71,6 @@ class ProductSpider(scrapy.Spider):
                     return response.status_code == 200
                 except requests.RequestException:
                     return False
-
 
             li_tag_brand = response.xpath('//div[@class="prod-feature"]/ul/li[span[@class="label" and text()="Marka"]]')
             li_tag_color = response.xpath('//div[@class="prod-feature"]/ul/li[span[@class="label" and text()="Kolor"]]')

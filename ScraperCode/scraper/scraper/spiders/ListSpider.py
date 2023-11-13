@@ -1,16 +1,16 @@
 import scrapy
-from ..items import *
-from ..pipelines import *
+from ..items import ListItem
 
 class ListSpider(scrapy.Spider):
 
     name = "list_spider"
 
     custom_settings = {
-        'FEEDS': { 'F:\\184725\\ScrapResults\\data.csv': {
+        'FEEDS': { 'C:\\PG\\sem_5\\BE\\Project\\ScrapResults\\data.csv': {
             'format': 'csv',
             'overwrite': True,
-            'encoding': 'utf8'
+            'encoding': 'utf8',
+            'csv_delimiter': ';'
         }}
     }
 
@@ -38,8 +38,7 @@ class ListSpider(scrapy.Spider):
                     url = "{}/{}/{}/?page={}".format(base_url, categories[i], sub_categories[i][j], k)
                     yield scrapy.Request(url, callback=self.parse, cb_kwargs={'sub_category': sub_categories_pl[i][j]})
 
-
-    def parse(self, response):
+    def parse(self, response, sub_category):
 
         body_element = response.css('body')
         body_class = body_element.css('::attr(class)').get()
@@ -51,13 +50,8 @@ class ListSpider(scrapy.Spider):
 
             a_tags_hrefs = [a_tag.css('::attr(href)').extract() for a_tag in a_tags]
 
-            # Ascribe evry item with data about paths
-            data = []
             for product_path in a_tags_hrefs:
                 item = ListItem()
                 item['product_site_path'] = product_path
-
-                data.append({
-                    "site_path": item['product_site_path'][0]
-                })
+                item['sub_category'] = sub_category
                 yield item
