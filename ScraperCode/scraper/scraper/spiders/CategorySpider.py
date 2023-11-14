@@ -6,7 +6,7 @@ class CategorySpider(scrapy.Spider):
     name = "category_spider"
 
     custom_settings = {
-        'FEEDS': { 'C:\\PG\\sem_5\\BE\\Project\\ScrapResults\\category_data.csv': {
+        'FEEDS': { 'C:\\Users\\predator\\Desktop\\ScraperCode\\results\\category_data.csv': {
             'format': 'csv',
             'overwrite': True,
             'encoding': 'utf8',
@@ -44,6 +44,7 @@ class CategorySpider(scrapy.Spider):
                 yield scrapy.Request(url, callback=self.parse_sub_category, cb_kwargs={'sub_category': sub_categories_pl[i][j], 'category': categories_pl[i], 'id':counter})
 
         for i in range(len(categories)):
+            url = "{}/{}/".format(base_url, categories[i])
             counter += 1
             yield scrapy.Request(url, callback=self.parse_category, cb_kwargs={'category': categories_pl[i], 'id':counter})
 
@@ -63,7 +64,6 @@ class CategorySpider(scrapy.Spider):
             item['Name'] = sub_category
             item['Description'] = description
             item['Parent_category'] = category
-            item['Root_category'] = 0
 
             yield item
 
@@ -82,7 +82,6 @@ class CategorySpider(scrapy.Spider):
             item['Active'] = 1
             item['Name'] = category
             item['Description'] = description
-            item['Parent_category'] = ""
-            item['Root_category'] = 1
+            item['Parent_category'] = "Strona główna"
 
             yield item
