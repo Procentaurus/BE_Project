@@ -24,6 +24,6 @@ class CategoryItem(scrapy.Item):
     Category_ID = scrapy.Field()
     Active = scrapy.Field()
     Name = scrapy.Field()
+    Description = scrapy.Field()
     Parent_category = scrapy.Field()
     Root_category = scrapy.Field()
-    

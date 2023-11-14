@@ -3,6 +3,7 @@ from ..support import read_col_from_csv
 from ..items import ProductItem
 from bs4 import BeautifulSoup
 from random import random, randint
+import requests
 
 class ProductSpider(scrapy.Spider):
 
@@ -16,9 +17,6 @@ class ProductSpider(scrapy.Spider):
                 'encoding': 'utf8',
             }
         },
-        # 'FEED_EXPORT_FIELDS': ['Product ID', 'Active', 'Name', 'Wholesale price', 'Weight',
-        #                    'Delivery time of in-stock products', 'Quantity', 'Description',
-        #                    'Available for order', 'Image URLs', 'Manufacturer', 'Categories', 'Color'],
         'FEED_EXPORTERS': {
             'csv': 'scraper.exporters.CustomCsvItemExporter',
         }
@@ -33,7 +31,7 @@ class ProductSpider(scrapy.Spider):
 
         for i in range(10):
             yield scrapy.Request(base_url + product_paths[i], callback=self.parse, cb_kwargs={'sub_category': sub_categories[i]} )
-
+            
     def parse(self, response, sub_category):
         
         base_url = "https://www.centrumrowerowe.pl"
@@ -65,7 +63,14 @@ class ProductSpider(scrapy.Spider):
                 description += text
 
             image_path_1 = base_url + response.css('.standard img::attr(src)').get()
-            image_path_2 = base_url + image_path_1[:-5] + '2' + image_path_1[-4:]
+            image_path_2 = image_path_1[:-5] + '2' + image_path_1[-4:]
+
+            def check_url(url):
+                try:
+                    response = requests.get(url)
+                    return response.status_code == 200
+                except requests.RequestException:
+                    return False
 
             li_tag_brand = response.xpath('//div[@class="prod-feature"]/ul/li[span[@class="label" and text()="Marka"]]')
             li_tag_color = response.xpath('//div[@class="prod-feature"]/ul/li[span[@class="label" and text()="Kolor"]]')
@@ -85,7 +90,7 @@ class ProductSpider(scrapy.Spider):
             item["Quantity"] = randint(0, 10)
             item["Description"] = description if description is not None else ""
             item["Available_for_order"] = 0 if item["Quantity"] == 0 else 1
-            item["Image_URLs"] = image_path_1, image_path_2
+            item["Image_URLs"] = image_path_1, image_path_2 if check_url(image_path_2) else image_path_1
             item["Manufacturer"] = brand
             item['Categories'] = sub_category
             item["Color"] = f"Color:{color}:0"
