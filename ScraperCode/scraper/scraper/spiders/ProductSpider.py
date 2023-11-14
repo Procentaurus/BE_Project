@@ -11,7 +11,7 @@ class ProductSpider(scrapy.Spider):
 
     custom_settings = {
         'FEEDS': {
-            'C:\\PG\\sem_5\\BE\\Project\\ScrapResults\\product_data.csv': {
+            'C:\\Users\\predator\\Desktop\\ScraperCode\\results\\product_data.csv': {
                 'format': 'csv',
                 'overwrite': True,
                 'encoding': 'utf8',
@@ -24,12 +24,12 @@ class ProductSpider(scrapy.Spider):
 
     def start_requests(self):
         
-        path_to_storage = "C:\\PG\\sem_5\\BE\Project\\ScrapResults\\"
+        path_to_storage = "C:\\Users\\predator\\Desktop\\ScraperCode\\results\\"
         base_url = "https://www.centrumrowerowe.pl"
         product_paths = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "product_site_path")
         sub_categories = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "sub_category")
 
-        for i in range(10):
+        for i in range(len(product_paths)):
             yield scrapy.Request(base_url + product_paths[i], callback=self.parse, cb_kwargs={'sub_category': sub_categories[i]} )
             
     def parse(self, response, sub_category):
