@@ -1,0 +1,70 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+ #header{ 
+    background: rgb(255, 255, 255) !important;
+    color: rgb(252, 132, 41); 
+}
+
+#header a{ 
+    background: rgb(255, 255, 255) !important;
+    color: rgb(252, 132, 41); 
+}
+ 
+ #header_row{
+    display: block;
+}
+
+#_header_div {
+    position: relative;
+}
+
+#nav1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#_desktop_user_info {
+    float: right;
+    display: inline-flex;
+    height: 23px;
+    width: 15%;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#contact_US {
+    color: aqua;
+}
+
+#_desktop_cart {
+    float: right;
+    display: inline-flex;
+    height: 23px;
+    width: 15%;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#search_widget {
+    width:65%;
+    margin-bottom: 20px;
+}
+
+.header-top .search-widgets {
+    max-width: none;
+}
+
+#header .header-top .position-static.sticky{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background:rgb(252, 132, 41);
+    padding-top: 10px;
+    transition: .5s;
+}
