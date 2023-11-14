@@ -1,0 +1,498 @@
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:41:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:41:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:41:19: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:41:19: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:09: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:09: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:10: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:10: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:11: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:11: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:12: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Link to database cannot be established: SQLSTATE[HY000] [2002] Connection refused at line 137 in file classes/db/DbPDO.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:13: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:14: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:14: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:14: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:14: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:15: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:16: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:17: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:20: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:20: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:21: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:21: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:22: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:22: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:22: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:22: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php
+*ERROR* 	v1.7.8.10	2023/11/09 - 19:43:23: Table &#039;prestashop.ps_shop_url&#039; doesn&#039;t exist&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+                    FROM ps_shop_url su
+                    LEFT JOIN ps_shop s ON (s.id_shop = su.id_shop)
+                    WHERE (su.domain = &#039;localhost&#039; OR su.domain_ssl = &#039;localhost&#039;)
+                        AND s.active = 1
+                        AND s.deleted = 0
+                    ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC&lt;/pre&gt; at line 769 in file classes/db/Db.php

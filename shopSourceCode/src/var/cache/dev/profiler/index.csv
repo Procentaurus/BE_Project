@@ -1,0 +1,7 @@
+c435b3,172.18.0.1,GET,http://localhost:8080/pudaadmin/index.php/improve/modules/manage/action/configure/paypal?_token=ZlA3-xgguBP6hCcraSJB7WzrBMxyYvGCeYR6QsXAIGk,1699979763,,302
+47accc,172.18.0.1,GET,http://localhost:8080/pudaadmin/index.php/improve/payment/preferences?_token=ZlA3-xgguBP6hCcraSJB7WzrBMxyYvGCeYR6QsXAIGk,1699979762,,200
+20e330,172.18.0.1,GET,http://localhost:8080/pudaadmin/index.php/improve/modules/manage/action/configure/paypal?_token=ZlA3-xgguBP6hCcraSJB7WzrBMxyYvGCeYR6QsXAIGk,1699979766,,302
+2195f1,172.18.0.1,POST,http://localhost:8080/pudaadmin/index.php/common/notifications?_token=ZlA3-xgguBP6hCcraSJB7WzrBMxyYvGCeYR6QsXAIGk&rand=1699979767834,1699979768,,200
+7c92f2,172.18.0.1,POST,http://localhost:8080/pudaadmin/index.php/common/notifications?_token=ZlA3-xgguBP6hCcraSJB7WzrBMxyYvGCeYR6QsXAIGk&rand=1699979767839,1699979768,,200
+ffeea8,172.18.0.1,POST,http://localhost:8080/pudaadmin/index.php/common/notifications?_token=ZlA3-xgguBP6hCcraSJB7WzrBMxyYvGCeYR6QsXAIGk&rand=1699979769988,1699979770,,200
+da4331,172.18.0.1,POST,http://localhost:8080/pudaadmin/index.php/common/notifications?_token=ZlA3-xgguBP6hCcraSJB7WzrBMxyYvGCeYR6QsXAIGk&rand=1699979769983,1699979770,,200

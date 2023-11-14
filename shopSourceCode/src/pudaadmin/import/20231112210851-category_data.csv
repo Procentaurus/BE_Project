@@ -1,0 +1,13 @@
+Category ID;Active;Name;Parent category
+3;1;warsztat rowerowy;Strona główna
+4;1;akcesoria;Strona główna
+5;1;części;Strona główna
+6;1;odzież rowerowa;Strona główna
+7;1;stojaki serwisowe na rower;warsztat rowerowy
+8;1;narzędzia rowerowe;warsztat rowerowy
+9;1;błotniki rowerowe;akcesoria
+10;1;bagażniki rowerowe;akcesoria
+11;1;grupy-osprzętu;części
+12;1;rowerowe napinacze łańcucha;części
+13;1;bielizna rowerowa;odzież rowerowa
+14;1;bluzy rowerowe;odzież rowerowa
