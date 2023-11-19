@@ -1,0 +1,36 @@
+
+version: '3'
+
+services:
+  prestashop:
+    build: .
+    container_name: prestashop
+    ports:
+      - 8080:80
+      - 443:443
+    volumes:
+     - /home/puda/BEP/src:/var/www/html
+    environment:
+      - DB_SERVER=mysql
+      - DB_USER=root
+      - DB_PASSWD=admin
+      - DB_NAME=prestashop
+    networks:
+      - prestashop-net
+  mysql:
+    image: mysql:5.7
+    container_name: mysqlPresta
+    volumes:
+     - /home/puda/BEP/sql:/var/lib/mysql
+    environment:
+      - PS_INSTALL_AUTO=0
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_DATABASE=prestashop
+    ports:
+      - 3306:3306
+    networks:
+      - prestashop-net
+networks:
+  prestashop-net:
+
+
