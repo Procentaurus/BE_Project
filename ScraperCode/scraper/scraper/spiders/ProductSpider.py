@@ -29,6 +29,7 @@ class ProductSpider(scrapy.Spider):
         product_paths = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "product_site_path")
         sub_categories = read_col_from_csv('{}\\data.csv'.format(path_to_storage), "sub_category")
 
+
         for i in range(len(product_paths)):
             yield scrapy.Request(base_url + product_paths[i], callback=self.parse, cb_kwargs={'sub_category': sub_categories[i]} )
             
@@ -92,7 +93,7 @@ class ProductSpider(scrapy.Spider):
             item["Available_for_order"] = 0 if item["Quantity"] == 0 else 1
             item["Image_URLs"] = image_path_1, image_path_2 if check_url(image_path_2) else image_path_1
             item["Manufacturer"] = brand
-            item['Categories'] = sub_category
+            item['Categories'] = sub_category.replace('-', ' ')
             item["Color"] = f"Color:{color}:0"
 
             yield item

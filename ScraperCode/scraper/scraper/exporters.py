@@ -5,6 +5,7 @@ class CustomCsvItemExporter(CsvItemExporter):
 
     def __init__(self, *args, **kwargs):
             kwargs['delimiter'] = ';'
+            kwargs['encoding'] = 'utf-8'
             super(CustomCsvItemExporter, self).__init__(*args, **kwargs)
 
     def serialize_field(self, field, name, value):

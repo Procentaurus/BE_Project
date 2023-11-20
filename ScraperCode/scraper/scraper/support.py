@@ -1,11 +1,11 @@
-import csv, os
+import csv
 
 def read_col_from_csv(path, col_name):
 
     data = []
 
     try:
-        with open(path, mode='r') as file:    
+        with open(path, mode='r', encoding='utf-8-sig') as file:    
             reader = csv.DictReader(file)
             for row in reader:
                 if col_name in row:
