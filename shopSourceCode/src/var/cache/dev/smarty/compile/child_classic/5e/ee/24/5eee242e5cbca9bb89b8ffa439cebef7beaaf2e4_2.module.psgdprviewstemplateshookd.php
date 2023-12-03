@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-20 21:28:21
+/* Smarty version 3.1.48, created on 2023-11-26 15:16:17
   from 'module:psgdprviewstemplateshookd' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_655bc165dfedf6_44135411',
+  'unifunc' => 'content_65635331a7a8a8_82595505',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5eee242e5cbca9bb89b8ffa439cebef7beaaf2e4' => 
     array (
       0 => 'module:psgdprviewstemplateshookd',
-      1 => 1700427566,
+      1 => 1701007188,
       2 => 'module',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_655bc165dfedf6_44135411 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65635331a7a8a8_82595505 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <!-- begin /var/www/html/modules/psgdpr/views/templates/hook/displayGDPRConsent.tpl --><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1728066606655bc165df7df9_22777719', 'gdpr_checkbox');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_212616972965635331a75f29_34624323', 'gdpr_checkbox');
 ?>
 
 
@@ -95,12 +95,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1728066606655bc165
 
 <!-- end /var/www/html/modules/psgdpr/views/templates/hook/displayGDPRConsent.tpl --><?php }
 /* {block 'gdpr_checkbox'} */
-class Block_1728066606655bc165df7df9_22777719 extends Smarty_Internal_Block
+class Block_212616972965635331a75f29_34624323 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'gdpr_checkbox' => 
   array (
-    0 => 'Block_1728066606655bc165df7df9_22777719',
+    0 => 'Block_212616972965635331a75f29_34624323',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

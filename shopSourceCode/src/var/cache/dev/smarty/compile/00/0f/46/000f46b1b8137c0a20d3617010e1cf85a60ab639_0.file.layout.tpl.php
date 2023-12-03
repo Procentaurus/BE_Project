@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-20 21:27:52
+/* Smarty version 3.1.48, created on 2023-11-26 15:17:08
   from '/var/www/html/pudaadmin/themes/default/template/layout.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_655bc1488814c3_45769268',
+  'unifunc' => 'content_656353643eff35_49399167',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '000f46b1b8137c0a20d3617010e1cf85a60ab639' => 
     array (
       0 => '/var/www/html/pudaadmin/themes/default/template/layout.tpl',
-      1 => 1700427553,
+      1 => 1701007189,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_655bc1488814c3_45769268 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656353643eff35_49399167 (Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['header']->value;?>
 
 <?php if ((isset($_smarty_tpl->tpl_vars['conf']->value))) {?>

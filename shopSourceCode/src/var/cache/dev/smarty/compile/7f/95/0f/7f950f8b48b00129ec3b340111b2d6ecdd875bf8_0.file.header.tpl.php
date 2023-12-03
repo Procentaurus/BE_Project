@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-20 21:27:52
+/* Smarty version 3.1.48, created on 2023-11-26 15:17:10
   from '/var/www/html/pudaadmin/themes/default/template/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_655bc1487f8e40_04489374',
+  'unifunc' => 'content_65635366d9cda3_20031699',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7f950f8b48b00129ec3b340111b2d6ecdd875bf8' => 
     array (
       0 => '/var/www/html/pudaadmin/themes/default/template/header.tpl',
-      1 => 1700427553,
+      1 => 1701007189,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:nav.tpl' => 1,
   ),
 ),false)) {
-function content_655bc1487f8e40_04489374 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65635366d9cda3_20031699 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <!--[if lt IE 7]> <html lang="<?php echo $_smarty_tpl->tpl_vars['iso']->value;?>
 " class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie6"> <![endif]-->
@@ -202,8 +202,8 @@ $_smarty_tpl->tpl_vars['quick']->do_else = false;
 ?>
                 <li class="quick-row-link<?php ob_start();
 echo $_smarty_tpl->tpl_vars['quick']->value['link'];
-$_prefixVariable7 = ob_get_clean();
-if ($_smarty_tpl->tpl_vars['link']->value->matchQuickLink($_prefixVariable7)) {
+$_prefixVariable1 = ob_get_clean();
+if ($_smarty_tpl->tpl_vars['link']->value->matchQuickLink($_prefixVariable1)) {
 $_smarty_tpl->_assignInScope('matchQuickLink', $_smarty_tpl->tpl_vars['quick']->value['id_quick_access']);?> active<?php }?>">
                   <a href="<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['quick']->value['link'],'html','UTF-8' ));?>
 " <?php if ($_smarty_tpl->tpl_vars['quick']->value['new_window']) {?>target="_blank"<?php }?>>
@@ -347,8 +347,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
             <?php ob_start();
 echo $_smarty_tpl->tpl_vars['base_url']->value;
-$_prefixVariable8 = ob_get_clean();
-if ($_prefixVariable8) {?>
+$_prefixVariable2 = ob_get_clean();
+if ($_prefixVariable2) {?>
         <ul id="header-list" class="header-list">
           <li class="shopname" data-mobile="true" data-from="header-list" data-target="menu">
             <?php if ((isset($_smarty_tpl->tpl_vars['is_multishop']->value)) && $_smarty_tpl->tpl_vars['is_multishop']->value && $_smarty_tpl->tpl_vars['shop_list']->value && ((isset($_smarty_tpl->tpl_vars['multishop_context']->value)) && $_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_GROUP || $_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_SHOP || $_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_ALL)) {?>
