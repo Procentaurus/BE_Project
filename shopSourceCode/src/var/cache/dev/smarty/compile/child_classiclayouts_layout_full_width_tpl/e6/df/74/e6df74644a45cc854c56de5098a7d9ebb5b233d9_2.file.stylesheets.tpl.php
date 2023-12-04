@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-20 21:28:21
+/* Smarty version 3.1.48, created on 2023-11-26 15:16:17
   from '/var/www/html/themes/classic/templates/_partials/stylesheets.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_655bc165bfb0b8_09941042',
+  'unifunc' => 'content_65635331a080e2_97522512',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e6df74644a45cc854c56de5098a7d9ebb5b233d9' => 
     array (
       0 => '/var/www/html/themes/classic/templates/_partials/stylesheets.tpl',
-      1 => 1700427571,
+      1 => 1701007189,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_655bc165bfb0b8_09941042 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65635331a080e2_97522512 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['stylesheets']->value['external'], 'stylesheet');
 $_smarty_tpl->tpl_vars['stylesheet']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['stylesheet']->value) {
