@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-20 21:28:21
+/* Smarty version 3.1.48, created on 2023-12-08 12:58:23
   from '/var/www/html/modules/blockreassurance/views/templates/hook/displayBlockProduct.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_655bc165d3a1a6_65621289',
+  'unifunc' => 'content_657304df046189_09798459',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9d86875214e41abacf7ca5f0f0a4f3269559639b' => 
     array (
       0 => '/var/www/html/modules/blockreassurance/views/templates/hook/displayBlockProduct.tpl',
-      1 => 1700427565,
+      1 => 1700509463,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_655bc165d3a1a6_65621289 (Smarty_Internal_Template $_smarty_tpl) {
+function content_657304df046189_09798459 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="blockreassurance_product">
     <?php

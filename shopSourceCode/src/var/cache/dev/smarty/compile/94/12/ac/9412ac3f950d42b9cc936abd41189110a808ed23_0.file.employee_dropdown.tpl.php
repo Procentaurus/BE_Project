@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-20 21:21:56
+/* Smarty version 3.1.48, created on 2023-12-08 12:58:55
   from '/var/www/html/pudaadmin/themes/new-theme/template/components/layout/employee_dropdown.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_655bbfe40980a4_15848440',
+  'unifunc' => 'content_657304ff458490_74289186',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9412ac3f950d42b9cc936abd41189110a808ed23' => 
     array (
       0 => '/var/www/html/pudaadmin/themes/new-theme/template/components/layout/employee_dropdown.tpl',
-      1 => 1700427554,
+      1 => 1700509464,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_655bbfe40980a4_15848440 (Smarty_Internal_Template $_smarty_tpl) {
+function content_657304ff458490_74289186 (Smarty_Internal_Template $_smarty_tpl) {
 if ((isset($_smarty_tpl->tpl_vars['employee']->value))) {?>
 <div class="dropdown employee-dropdown">
   <div class="rounded-circle person" data-toggle="dropdown">

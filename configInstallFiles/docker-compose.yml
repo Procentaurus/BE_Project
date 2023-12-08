@@ -9,7 +9,7 @@ services:
       - 8080:80
       - 443:443
     volumes:
-     - /home/puda/git/BE_Project/shopSourceCode/src:/var/www/html
+     - /home/karolix/BE_Project/shopSourceCode/src:/var/www/html
     environment:
       - DB_SERVER=mysql
       - DB_USER=root
@@ -21,7 +21,7 @@ services:
     image: mysql:5.7
     container_name: mysqlPresta
     volumes:
-     - /home/puda/git/BE_Project/Database/sql:/var/lib/mysql
+     - /home/karolix/BE_Project/Database/sql:/var/lib/mysql
     environment:
       - PS_INSTALL_AUTO=0
       - MYSQL_ROOT_PASSWORD=admin

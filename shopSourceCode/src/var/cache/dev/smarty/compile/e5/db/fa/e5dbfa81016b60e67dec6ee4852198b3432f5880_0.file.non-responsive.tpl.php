@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-20 21:21:56
+/* Smarty version 3.1.48, created on 2023-12-08 12:58:55
   from '/var/www/html/pudaadmin/themes/new-theme/template/components/layout/non-responsive.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_655bbfe40e5660_51968019',
+  'unifunc' => 'content_657304ff4822e9_57114169',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e5dbfa81016b60e67dec6ee4852198b3432f5880' => 
     array (
       0 => '/var/www/html/pudaadmin/themes/new-theme/template/components/layout/non-responsive.tpl',
-      1 => 1700427554,
+      1 => 1700509464,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_655bbfe40e5660_51968019 (Smarty_Internal_Template $_smarty_tpl) {
+function content_657304ff4822e9_57114169 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="non-responsive" class="js-non-responsive">
   <h1><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Oh no!'),$_smarty_tpl ) );?>
 </h1>
